@@ -9,4 +9,6 @@ Cifrarer se plantea como una herramienta de automatización a nivel de comandos.
 
 Cifrarer busca simplificar este procedimiento, ofreciendo una solución más cómoda y accesible para una tarea que suele ser aburrida y repetitiva. En lugar de realizar todo mediante comandos, la aplicación permite hacerlo de forma más sencilla a través de una interfaz gráfica.
 
+# FUNCIONALIDADES
 
+Uso de **Zeroize** para borrar datos de la memoria, en este caso al crear **struct DataInfo<'a>** contiene el campo de la contraseña que se usara para cifrar el contenedor, usando **Zeroize** se encarga de limpiar ese espacio de memoria especifico, sobreescribe los datos en memoria usando [0]. Imagine el siguente caso -> password:holamundo123 al usar Zeroize toma esa password y cuando password sale de su scope **Zeroize** reescribe ese espacio usando quedando -> [0][0][0][0][0] ⛓️
