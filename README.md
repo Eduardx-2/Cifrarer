@@ -12,6 +12,7 @@ Cifrarer busca simplificar este procedimiento, ofreciendo una solución más có
 <p align="center">
   <img width="80%" height="145%" src="https://github.com/Eduardx-2/Cifrarer/blob/main/cifrarer.png">
 </p>
+¿Por qué alguíen necesitaria un contenedor cifrado? al crear un .img cifrado puede dentro de el colocar una ruta de su sistema, imagine el caso que usted quiera cifrar la ruta de sus imagenes personales, con esto puede facilitar su creación. 
 
 
 # FUNCIONALIDADES
