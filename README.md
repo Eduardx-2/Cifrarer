@@ -1,7 +1,7 @@
 # CIFRARER
 Cifrarer es una herramienta de automatización para crear contenedores cifrados usando el formato de cifrado luks.
 <p align="center">
-  <img width="80%" height="145%" src="https://github.com/Eduardx-2/AquilaEcu/blob/main/nbproject/private/ecuador_data.png">
+  <img width="80%" height="145%" src="https://github.com/Eduardx-2/Cifrarer/blob/main/cifrarer.png">
 </p>
 
 # FUNCIÓN
