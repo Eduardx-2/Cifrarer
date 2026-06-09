@@ -1,5 +1,5 @@
 # CIFRARER
-Cifrarer es una herramienta de automatización para crear contenedores cifrados usando el formato de cifrado luks.
+Cifrarer es una herramienta de automatización para crear contenedores cifrados usando el formato de cifrado luks(Solo sistemas operativos Linux).
 <p align="center">
   <img width="50%" height="145%" src="https://github.com/Eduardx-2/Cifrarer/blob/main/Ij0DO.jpg">
 </p>
@@ -17,4 +17,9 @@ Cifrarer busca simplificar este procedimiento, ofreciendo una solución más có
 
 # FUNCIONALIDADES
 
-Uso de **Zeroize** para borrar datos de la memoria, en este caso al crear **struct DataInfo<'a>** contiene el campo de la contraseña que se usara para cifrar el contenedor, usando **Zeroize** se encarga de limpiar ese espacio de memoria especifico, sobreescribe los datos en memoria usando [0]. Imagine el siguente caso -> password:holamundo123 al usar Zeroize toma esa password y cuando password sale de su scope **Zeroize** reescribe ese espacio usando quedando -> [0][0][0][0][0] ⛓️
+ - Uso de **Zeroize** para borrar datos de la memoria, en este caso al crear **struct DataInfo<'a>** contiene el campo de la contraseña que se usara para cifrar el contenedor, usando **Zeroize** se encarga de limpiar ese espacio de memoria          especifico, sobreescribe los datos en memoria usando [0]. Imagine el siguente caso -> password:holamundo123 al usar Zeroize toma esa password y cuando password sale de su scope **Zeroize** reescribe ese espacio usando quedando -> [0][0][0][0][0] ⛓️
+
+- Se usa un IPC SOCKET (Inter Process Comunication): comunicación entre procesos via socket usando el puerto 8080.
+
+- Cifrarer prioriza Velocidad y seguridad, pero también versatilidad por eso se usa una api rest desarrollada en python la cuál se encarga de obtener el espacio libre en el disco del sistema operativo, así evitamos que java en un entorno de flatpak no se vuelva inutil. 
+
