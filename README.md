@@ -21,5 +21,8 @@ Cifrarer busca simplificar este procedimiento, ofreciendo una solución más có
 
 - Se usa un IPC SOCKET (Inter Process Comunication): comunicación entre procesos via socket usando el puerto 8080.
 
-- Cifrarer prioriza Velocidad y Seguridad, pero también versatilidad por eso se usa una api rest desarrollada en python la cuál se encarga de obtener el espacio libre en el disco del sistema operativo, así evitamos que java en un entorno de flatpak no se vuelva inutil(Sandbox). 
+- Cifrarer prioriza Velocidad y Seguridad, pero también versatilidad por eso se usa una api rest desarrollada en python la cuál se encarga de obtener el espacio libre en el disco del sistema operativo, así evitamos que java en un entorno de flatpak no se vuelva inutil(Sandbox).
+
+- **Tipo de designador**: Fallocate y dd, ambos sirven para crear una imagen de disco (.img), tome en cuenta que la elección depende de cada persona.
+- **Tipo de filesystem**: Btrfs y ext4.
 
