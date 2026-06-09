@@ -1,0 +1,1 @@
+/home/eduardx_2/Documentos/Cifrarer/cifrarer-rust/target/debug/cifrarer-rust: /home/eduardx_2/Documentos/Cifrarer/cifrarer-rust/src/data_comp.rs /home/eduardx_2/Documentos/Cifrarer/cifrarer-rust/src/main.rs
